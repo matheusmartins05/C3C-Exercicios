@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de Triângulo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Tipos de triângulo</h2>
+      <p>Digite o tamanho de cada lado do triângulo:</p>
+
+      <label >
+        <input type="number" id="lado1" min="1" placeholder="Lado A"  oninput="validity.valid||(value='');" />
+      </label>
+      <label>
+        <input type="number" id="lado2" min="1" placeholder="Lado B"  oninput="validity.valid||(value='');"/>
+      </label>
+      <label
+        ><input type="number" id="lado3" min="1" placeholder="Lado C" oninput="validity.valid||(value='');" />
+      </label>
+
+      <button id="botao">Verificar</button><br />
+
+      <div id="valoresVazio"></div>
+
+      <label id="etiquetaResultado"
+        >Este triângulo é:
+        <input type="text" disabled id="resultado" />
+      </label>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
